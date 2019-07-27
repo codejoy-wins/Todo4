@@ -12,15 +12,18 @@ class App extends React.Component{
     this.state = {
       todos: todoData
     }
+    this.handleClick = this.handleClick.bind(this)
   }
 
-
+  handleClick(id){
+    console.log(`clicking ${id}`)
+  }
 
   render(){
 
     const todos = this.state.todos.map(todo=>{
       return (
-        <Todo desc = {todo.desc} key = {todo.id} id = {todo.id} completed = {todo.id} />
+        <Todo handleClick={this.handleClick} desc = {todo.desc} key = {todo.id} id = {todo.id} completed = {todo.completed} />
       )
     })
 
@@ -33,7 +36,7 @@ class App extends React.Component{
         <main>
           <h2>Todo List</h2>
           {todos}
-          <img src={baker3} className="widify"></img>
+          <img src={baker3} alt="mayfield" className="widify"></img>
         </main>
         <footer>
           <a href="https://maxjann.com">Jann Software</a>
