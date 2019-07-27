@@ -49,7 +49,7 @@ class App extends React.Component{
           {todos}
           <img src={baker3} alt="mayfield" className="widify"></img>
         </main>
-        <footer>
+        <footer style={{padding:"4vw"}}>
           <a href="https://maxjann.com">Jann Software</a>
         </footer>
       </div>

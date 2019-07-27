@@ -4,7 +4,14 @@
 .widify{
   width: 100%;
 }
-
+a{
+  text-decoration: none;
+  color: #282c34;
+}
+a:hover{
+  color: gold;
+  background: linear-gradient(45deg,rgb(17, 16, 8),rgb(242, 160, 7))
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
